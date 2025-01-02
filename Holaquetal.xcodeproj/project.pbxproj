@@ -13,6 +13,14 @@
 		BFC25F152D22F34C0082989F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BFC25F142D22F34C0082989F /* Base */; };
 		BFC25F172D22F34E0082989F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC25F162D22F34E0082989F /* Assets.xcassets */; };
 		BFC25F1A2D22F34E0082989F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BFC25F192D22F34E0082989F /* Base */; };
+		BFC25F242D2560F60082989F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BFC25F232D2560F60082989F /* .gitignore */; };
+		BFC25F262D2561100082989F /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F252D2561100082989F /* APIKey.swift */; };
+		BFC25F2D2D26DEE70082989F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F2C2D26DEE70082989F /* SignUpView.swift */; };
+		BFC25F2F2D26DEF00082989F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F2E2D26DEF00082989F /* SignUpViewModel.swift */; };
+		BFC25F312D26DF100082989F /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F302D26DF100082989F /* SignUpCoordinator.swift */; };
+		BFC25F332D26DF290082989F /* SignInCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F322D26DF290082989F /* SignInCView.swift */; };
+		BFC25F352D26DF300082989F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F342D26DF300082989F /* SignInViewModel.swift */; };
+		BFC25F372D26DF3A0082989F /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F362D26DF3A0082989F /* SignInCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		BFC25F162D22F34E0082989F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC25F192D22F34E0082989F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFC25F1B2D22F34E0082989F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC25F232D2560F60082989F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BFC25F252D2561100082989F /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		BFC25F2C2D26DEE70082989F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		BFC25F2E2D26DEF00082989F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		BFC25F302D26DF100082989F /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		BFC25F322D26DF290082989F /* SignInCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCView.swift; sourceTree = "<group>"; };
+		BFC25F342D26DF300082989F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		BFC25F362D26DF3A0082989F /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,71 @@
 		BFC25F0C2D22F34C0082989F /* Holaquetal */ = {
 			isa = PBXGroup;
 			children = (
-				BFC25F0D2D22F34C0082989F /* AppDelegate.swift */,
-				BFC25F0F2D22F34C0082989F /* SceneDelegate.swift */,
+				BFC25F282D26DEB00082989F /* Presentation */,
+				BFC25F272D26DEA20082989F /* App */,
 				BFC25F112D22F34C0082989F /* ViewController.swift */,
 				BFC25F132D22F34C0082989F /* Main.storyboard */,
 				BFC25F162D22F34E0082989F /* Assets.xcassets */,
 				BFC25F182D22F34E0082989F /* LaunchScreen.storyboard */,
 				BFC25F1B2D22F34E0082989F /* Info.plist */,
+				BFC25F232D2560F60082989F /* .gitignore */,
+				BFC25F252D2561100082989F /* APIKey.swift */,
 			);
 			path = Holaquetal;
+			sourceTree = "<group>";
+		};
+		BFC25F272D26DEA20082989F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BFC25F0D2D22F34C0082989F /* AppDelegate.swift */,
+				BFC25F0F2D22F34C0082989F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BFC25F282D26DEB00082989F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BFC25F292D26DEB90082989F /* Auth */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BFC25F292D26DEB90082989F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				BFC25F382D26DF420082989F /* Home */,
+				BFC25F2B2D26DEC80082989F /* SignUp */,
+				BFC25F2A2D26DEC00082989F /* SingIn */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		BFC25F2A2D26DEC00082989F /* SingIn */ = {
+			isa = PBXGroup;
+			children = (
+				BFC25F322D26DF290082989F /* SignInCView.swift */,
+				BFC25F342D26DF300082989F /* SignInViewModel.swift */,
+				BFC25F362D26DF3A0082989F /* SignInCoordinator.swift */,
+			);
+			path = SingIn;
+			sourceTree = "<group>";
+		};
+		BFC25F2B2D26DEC80082989F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				BFC25F2C2D26DEE70082989F /* SignUpView.swift */,
+				BFC25F2E2D26DEF00082989F /* SignUpViewModel.swift */,
+				BFC25F302D26DF100082989F /* SignUpCoordinator.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		BFC25F382D26DF420082989F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC25F242D2560F60082989F /* .gitignore in Resources */,
 				BFC25F172D22F34E0082989F /* Assets.xcassets in Resources */,
 				BFC25F1A2D22F34E0082989F /* Base in Resources */,
 				BFC25F152D22F34C0082989F /* Base in Resources */,
@@ -139,7 +212,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC25F122D22F34C0082989F /* ViewController.swift in Sources */,
+				BFC25F312D26DF100082989F /* SignUpCoordinator.swift in Sources */,
+				BFC25F332D26DF290082989F /* SignInCView.swift in Sources */,
+				BFC25F2D2D26DEE70082989F /* SignUpView.swift in Sources */,
+				BFC25F372D26DF3A0082989F /* SignInCoordinator.swift in Sources */,
 				BFC25F0E2D22F34C0082989F /* AppDelegate.swift in Sources */,
+				BFC25F352D26DF300082989F /* SignInViewModel.swift in Sources */,
+				BFC25F262D2561100082989F /* APIKey.swift in Sources */,
+				BFC25F2F2D26DEF00082989F /* SignUpViewModel.swift in Sources */,
 				BFC25F102D22F34C0082989F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,8 +378,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +387,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.Holaquetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,8 +410,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +419,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jimmy.Holaquetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
