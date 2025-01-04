@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		BFC25F0E2D22F34C0082989F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F0D2D22F34C0082989F /* AppDelegate.swift */; };
 		BFC25F102D22F34C0082989F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F0F2D22F34C0082989F /* SceneDelegate.swift */; };
-		BFC25F122D22F34C0082989F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F112D22F34C0082989F /* ViewController.swift */; };
-		BFC25F152D22F34C0082989F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BFC25F142D22F34C0082989F /* Base */; };
 		BFC25F172D22F34E0082989F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC25F162D22F34E0082989F /* Assets.xcassets */; };
 		BFC25F1A2D22F34E0082989F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BFC25F192D22F34E0082989F /* Base */; };
 		BFC25F242D2560F60082989F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BFC25F232D2560F60082989F /* .gitignore */; };
@@ -27,7 +25,7 @@
 		BFC25F412D280CE90082989F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F402D280CE90082989F /* CustomTextField.swift */; };
 		BFC25F452D280D120082989F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F442D280D120082989F /* UIColor+Extensions.swift */; };
 		BFC25F472D280D1B0082989F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F462D280D1B0082989F /* UIView+Extensions.swift */; };
-		BFC25F4D2D280D8E0082989F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F4C2D280D8E0082989F /* Logger.swift */; };
+		BFC25F4D2D280D8E0082989F /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F4C2D280D8E0082989F /* Font.swift */; };
 		BFC25F4F2D280D950082989F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F4E2D280D950082989F /* Constants.swift */; };
 		BFC25F512D280D9E0082989F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F502D280D9E0082989F /* Environment.swift */; };
 		BFC25F572D280DD70082989F /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F562D280DD70082989F /* SignInRequest.swift */; };
@@ -40,14 +38,15 @@
 		BFC25F672D280E1E0082989F /* FetchUserDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F662D280E1E0082989F /* FetchUserDataUseCase.swift */; };
 		BFC25F692D280E320082989F /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F682D280E320082989F /* AuthResponse.swift */; };
 		BFC25F6B2D280E3B0082989F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F6A2D280E3A0082989F /* User.swift */; };
+		BFC25F6D2D290D680082989F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F6C2D290D680082989F /* OnboardingViewController.swift */; };
+		BFC25F702D290DD90082989F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = BFC25F6F2D290DD90082989F /* Then */; };
+		BFC25F732D2916E20082989F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BFC25F722D2916E20082989F /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFC25F0A2D22F34C0082989F /* Holaquetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holaquetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC25F0D2D22F34C0082989F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC25F0F2D22F34C0082989F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFC25F112D22F34C0082989F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BFC25F142D22F34C0082989F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFC25F162D22F34E0082989F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC25F192D22F34E0082989F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFC25F1B2D22F34E0082989F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +64,7 @@
 		BFC25F402D280CE90082989F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		BFC25F442D280D120082989F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		BFC25F462D280D1B0082989F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		BFC25F4C2D280D8E0082989F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BFC25F4C2D280D8E0082989F /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		BFC25F4E2D280D950082989F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BFC25F502D280D9E0082989F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		BFC25F562D280DD70082989F /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		BFC25F662D280E1E0082989F /* FetchUserDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserDataUseCase.swift; sourceTree = "<group>"; };
 		BFC25F682D280E320082989F /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		BFC25F6A2D280E3A0082989F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BFC25F6C2D290D680082989F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC25F702D290DD90082989F /* Then in Frameworks */,
+				BFC25F732D2916E20082989F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +118,6 @@
 				BFC25F482D280D2C0082989F /* Domain */,
 				BFC25F282D26DEB00082989F /* Presentation */,
 				BFC25F272D26DEA20082989F /* App */,
-				BFC25F112D22F34C0082989F /* ViewController.swift */,
-				BFC25F132D22F34C0082989F /* Main.storyboard */,
 				BFC25F182D22F34E0082989F /* LaunchScreen.storyboard */,
 				BFC25F1B2D22F34E0082989F /* Info.plist */,
 				BFC25F232D2560F60082989F /* .gitignore */,
@@ -148,6 +148,7 @@
 		BFC25F292D26DEB90082989F /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				BFC25F6C2D290D680082989F /* OnboardingViewController.swift */,
 				BFC25F2B2D26DEC80082989F /* SignUp */,
 				BFC25F2A2D26DEC00082989F /* SingIn */,
 			);
@@ -222,7 +223,7 @@
 		BFC25F492D280D310082989F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				BFC25F4C2D280D8E0082989F /* Logger.swift */,
+				BFC25F4C2D280D8E0082989F /* Font.swift */,
 				BFC25F4E2D280D950082989F /* Constants.swift */,
 				BFC25F502D280D9E0082989F /* Environment.swift */,
 			);
@@ -316,6 +317,10 @@
 			dependencies = (
 			);
 			name = Holaquetal;
+			packageProductDependencies = (
+				BFC25F6F2D290DD90082989F /* Then */,
+				BFC25F722D2916E20082989F /* SnapKit */,
+			);
 			productName = Holaquetal;
 			productReference = BFC25F0A2D22F34C0082989F /* Holaquetal.app */;
 			productType = "com.apple.product-type.application";
@@ -344,6 +349,10 @@
 				Base,
 			);
 			mainGroup = BFC25F012D22F34C0082989F;
+			packageReferences = (
+				BFC25F6E2D290DD90082989F /* XCRemoteSwiftPackageReference "Then" */,
+				BFC25F712D2916E20082989F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = BFC25F0B2D22F34C0082989F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,7 +370,6 @@
 				BFC25F242D2560F60082989F /* .gitignore in Resources */,
 				BFC25F172D22F34E0082989F /* Assets.xcassets in Resources */,
 				BFC25F1A2D22F34E0082989F /* Base in Resources */,
-				BFC25F152D22F34C0082989F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,13 +386,13 @@
 				BFC25F452D280D120082989F /* UIColor+Extensions.swift in Sources */,
 				BFC25F3F2D280CDF0082989F /* CustomButton.swift in Sources */,
 				BFC25F592D280DDD0082989F /* UserDataResponse.swift in Sources */,
-				BFC25F122D22F34C0082989F /* ViewController.swift in Sources */,
+				BFC25F6D2D290D680082989F /* OnboardingViewController.swift in Sources */,
 				BFC25F312D26DF100082989F /* SignUpCoordinator.swift in Sources */,
 				BFC25F6B2D280E3B0082989F /* User.swift in Sources */,
 				BFC25F332D26DF290082989F /* SignInViewController.swift in Sources */,
 				BFC25F472D280D1B0082989F /* UIView+Extensions.swift in Sources */,
 				BFC25F2D2D26DEE70082989F /* SignUpViewController.swift in Sources */,
-				BFC25F4D2D280D8E0082989F /* Logger.swift in Sources */,
+				BFC25F4D2D280D8E0082989F /* Font.swift in Sources */,
 				BFC25F5D2D280DED0082989F /* AuthRepository.swift in Sources */,
 				BFC25F372D26DF3A0082989F /* SignInCoordinator.swift in Sources */,
 				BFC25F652D280E180082989F /* SignInUseCase.swift in Sources */,
@@ -407,14 +415,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BFC25F132D22F34C0082989F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFC25F142D22F34C0082989F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BFC25F182D22F34E0082989F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -478,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -535,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -557,7 +557,6 @@
 				INFOPLIST_FILE = Holaquetal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -589,7 +588,6 @@
 				INFOPLIST_FILE = Holaquetal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -631,6 +629,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFC25F6E2D290DD90082989F /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		BFC25F712D2916E20082989F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFC25F6F2D290DD90082989F /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFC25F6E2D290DD90082989F /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		BFC25F722D2916E20082989F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFC25F712D2916E20082989F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFC25F022D22F34C0082989F /* Project object */;
 }
