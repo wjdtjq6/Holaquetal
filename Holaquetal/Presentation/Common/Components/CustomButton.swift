@@ -13,15 +13,15 @@ class CommonButton: UIButton {
         super.init(frame: frame)
     }
     
-    init(title: String, foreColor: UIColor, backColor: UIColor, textColor: UIColor) {
+    init(title: String, foreColor: UIColor?, backColor: UIColor, textColor: UIColor) {
         super.init(frame: .zero)
         self.configuration = .filled()
         setTitle(title, for: .normal)
         titleLabel?.font = Font.Title2.font
         backgroundColor = backColor
         setTitleColor(foreColor, for: .normal)
-        layer.borderColor = foreColor.cgColor
-        if foreColor != UIColor.white {
+        layer.borderColor = foreColor?.cgColor
+        if let _ = foreColor {
             layer.borderWidth = 2
         }
         layer.cornerRadius = 15
