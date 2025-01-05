@@ -15,6 +15,7 @@ class CommonButton: UIButton {
     
     init(title: String, foreColor: UIColor, backColor: UIColor, textColor: UIColor) {
         super.init(frame: .zero)
+        self.configuration = .filled()
         setTitle(title, for: .normal)
         titleLabel?.font = Font.Title2.font
         backgroundColor = backColor
