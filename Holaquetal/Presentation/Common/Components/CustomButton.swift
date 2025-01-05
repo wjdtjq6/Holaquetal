@@ -13,15 +13,17 @@ class CommonButton: UIButton {
         super.init(frame: frame)
     }
     
-    init(title: String, foreColor: UIColor, backColor: UIColor, textColor: UIColor, shadowColor: CGColor?) {
+    init(title: String, foreColor: UIColor, backColor: UIColor, textColor: UIColor) {
         super.init(frame: .zero)
         setTitle(title, for: .normal)
-        titleLabel?.font = Font.Body.font
+        titleLabel?.font = Font.Title2.font
         backgroundColor = backColor
         setTitleColor(foreColor, for: .normal)
-        layer.cornerRadius = 20
-        layer.borderWidth = 2
-        layer.shadowColor = shadowColor
+        layer.borderColor = foreColor.cgColor
+        if foreColor != UIColor.white {
+            layer.borderWidth = 2
+        }
+        layer.cornerRadius = 15
     }
     
     required init?(coder: NSCoder) {

@@ -6,16 +6,17 @@
 //
 
 import UIKit
-import Then
 import SnapKit
 
 class OnboardingViewController: UIViewController {
     
-    let image = UIImageView().then {
-        $0.image = UIImage(named: "iHola!")
+    let onboardingView = OnboardingView()
+
+    override func loadView() {
+        view = onboardingView
     }
     
     override func viewDidLoad() {
-        image.addSubview(image)
+        
     }
 }

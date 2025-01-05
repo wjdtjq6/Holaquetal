@@ -23,24 +23,22 @@
 		BFC25F3C2D280CB40082989F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F3B2D280CB40082989F /* HomeViewModel.swift */; };
 		BFC25F3F2D280CDF0082989F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F3E2D280CDF0082989F /* CustomButton.swift */; };
 		BFC25F412D280CE90082989F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F402D280CE90082989F /* CustomTextField.swift */; };
-		BFC25F452D280D120082989F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F442D280D120082989F /* UIColor+Extensions.swift */; };
-		BFC25F472D280D1B0082989F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F462D280D1B0082989F /* UIView+Extensions.swift */; };
 		BFC25F4D2D280D8E0082989F /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F4C2D280D8E0082989F /* Font.swift */; };
 		BFC25F4F2D280D950082989F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F4E2D280D950082989F /* Constants.swift */; };
-		BFC25F512D280D9E0082989F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F502D280D9E0082989F /* Environment.swift */; };
 		BFC25F572D280DD70082989F /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F562D280DD70082989F /* SignInRequest.swift */; };
-		BFC25F592D280DDD0082989F /* UserDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F582D280DDD0082989F /* UserDataResponse.swift */; };
-		BFC25F5B2D280DE60082989F /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F5A2D280DE60082989F /* UserRepository.swift */; };
-		BFC25F5D2D280DED0082989F /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F5C2D280DED0082989F /* AuthRepository.swift */; };
 		BFC25F5F2D280DF50082989F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F5E2D280DF50082989F /* Endpoints.swift */; };
 		BFC25F612D280DFB0082989F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F602D280DFB0082989F /* APIManager.swift */; };
-		BFC25F652D280E180082989F /* SignInUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F642D280E180082989F /* SignInUseCase.swift */; };
-		BFC25F672D280E1E0082989F /* FetchUserDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F662D280E1E0082989F /* FetchUserDataUseCase.swift */; };
-		BFC25F692D280E320082989F /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F682D280E320082989F /* AuthResponse.swift */; };
-		BFC25F6B2D280E3B0082989F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F6A2D280E3A0082989F /* User.swift */; };
 		BFC25F6D2D290D680082989F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F6C2D290D680082989F /* OnboardingViewController.swift */; };
 		BFC25F702D290DD90082989F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = BFC25F6F2D290DD90082989F /* Then */; };
 		BFC25F732D2916E20082989F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BFC25F722D2916E20082989F /* SnapKit */; };
+		BFC25F772D2A72EA0082989F /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F762D2A72EA0082989F /* AuthView.swift */; };
+		BFC25F792D2A73240082989F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F782D2A73240082989F /* AuthViewController.swift */; };
+		BFC25F7B2D2A737E0082989F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F7A2D2A737E0082989F /* AuthViewModel.swift */; };
+		BFC25F7D2D2A73B60082989F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F7C2D2A73B60082989F /* OnboardingView.swift */; };
+		BFC25F7F2D2A73BE0082989F /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F7E2D2A73BE0082989F /* OnboardingViewModel.swift */; };
+		BFC25F822D2A7B090082989F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F812D2A7B090082989F /* BaseView.swift */; };
+		BFC25F842D2A7B140082989F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F832D2A7B140082989F /* BaseViewController.swift */; };
+		BFC25F862D2A7B190082989F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F852D2A7B190082989F /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,22 +60,20 @@
 		BFC25F3B2D280CB40082989F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		BFC25F3E2D280CDF0082989F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		BFC25F402D280CE90082989F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		BFC25F442D280D120082989F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		BFC25F462D280D1B0082989F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BFC25F4C2D280D8E0082989F /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		BFC25F4E2D280D950082989F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		BFC25F502D280D9E0082989F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		BFC25F562D280DD70082989F /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
-		BFC25F582D280DDD0082989F /* UserDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataResponse.swift; sourceTree = "<group>"; };
-		BFC25F5A2D280DE60082989F /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
-		BFC25F5C2D280DED0082989F /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		BFC25F5E2D280DF50082989F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		BFC25F602D280DFB0082989F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		BFC25F642D280E180082989F /* SignInUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCase.swift; sourceTree = "<group>"; };
-		BFC25F662D280E1E0082989F /* FetchUserDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserDataUseCase.swift; sourceTree = "<group>"; };
-		BFC25F682D280E320082989F /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
-		BFC25F6A2D280E3A0082989F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BFC25F6C2D290D680082989F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		BFC25F762D2A72EA0082989F /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		BFC25F782D2A73240082989F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		BFC25F7A2D2A737E0082989F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		BFC25F7C2D2A73B60082989F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		BFC25F7E2D2A73BE0082989F /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		BFC25F812D2A7B090082989F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		BFC25F832D2A7B140082989F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BFC25F852D2A7B190082989F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +111,6 @@
 				BFC25F522D280DAC0082989F /* Data */,
 				BFC25F4A2D280D3D0082989F /* Resources */,
 				BFC25F492D280D310082989F /* Utilities */,
-				BFC25F482D280D2C0082989F /* Domain */,
 				BFC25F282D26DEB00082989F /* Presentation */,
 				BFC25F272D26DEA20082989F /* App */,
 				BFC25F182D22F34E0082989F /* LaunchScreen.storyboard */,
@@ -148,7 +143,8 @@
 		BFC25F292D26DEB90082989F /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				BFC25F6C2D290D680082989F /* OnboardingViewController.swift */,
+				BFC25F752D2A72BD0082989F /* Auth */,
+				BFC25F742D2A72910082989F /* Onboarding */,
 				BFC25F2B2D26DEC80082989F /* SignUp */,
 				BFC25F2A2D26DEC00082989F /* SingIn */,
 			);
@@ -187,7 +183,7 @@
 		BFC25F3D2D280CD00082989F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				BFC25F432D280D060082989F /* Extensions */,
+				BFC25F802D2A7B010082989F /* Base */,
 				BFC25F422D280CF10082989F /* Components */,
 			);
 			path = Common;
@@ -202,30 +198,11 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		BFC25F432D280D060082989F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				BFC25F442D280D120082989F /* UIColor+Extensions.swift */,
-				BFC25F462D280D1B0082989F /* UIView+Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		BFC25F482D280D2C0082989F /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				BFC25F632D280E110082989F /* UseCases */,
-				BFC25F622D280E060082989F /* Entities */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		BFC25F492D280D310082989F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				BFC25F4C2D280D8E0082989F /* Font.swift */,
 				BFC25F4E2D280D950082989F /* Constants.swift */,
-				BFC25F502D280D9E0082989F /* Environment.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -250,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				BFC25F552D280DCE0082989F /* Models */,
-				BFC25F542D280DBE0082989F /* Repositories */,
 				BFC25F532D280DB60082989F /* Network */,
 			);
 			path = Data;
@@ -265,40 +241,42 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		BFC25F542D280DBE0082989F /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				BFC25F5A2D280DE60082989F /* UserRepository.swift */,
-				BFC25F5C2D280DED0082989F /* AuthRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
 		BFC25F552D280DCE0082989F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BFC25F562D280DD70082989F /* SignInRequest.swift */,
-				BFC25F582D280DDD0082989F /* UserDataResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		BFC25F622D280E060082989F /* Entities */ = {
+		BFC25F742D2A72910082989F /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				BFC25F682D280E320082989F /* AuthResponse.swift */,
-				BFC25F6A2D280E3A0082989F /* User.swift */,
+				BFC25F6C2D290D680082989F /* OnboardingViewController.swift */,
+				BFC25F7C2D2A73B60082989F /* OnboardingView.swift */,
+				BFC25F7E2D2A73BE0082989F /* OnboardingViewModel.swift */,
 			);
-			path = Entities;
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		BFC25F632D280E110082989F /* UseCases */ = {
+		BFC25F752D2A72BD0082989F /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				BFC25F642D280E180082989F /* SignInUseCase.swift */,
-				BFC25F662D280E1E0082989F /* FetchUserDataUseCase.swift */,
+				BFC25F762D2A72EA0082989F /* AuthView.swift */,
+				BFC25F782D2A73240082989F /* AuthViewController.swift */,
+				BFC25F7A2D2A737E0082989F /* AuthViewModel.swift */,
 			);
-			path = UseCases;
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		BFC25F802D2A7B010082989F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BFC25F812D2A7B090082989F /* BaseView.swift */,
+				BFC25F832D2A7B140082989F /* BaseViewController.swift */,
+				BFC25F852D2A7B190082989F /* BaseViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,35 +358,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC25F5B2D280DE60082989F /* UserRepository.swift in Sources */,
 				BFC25F412D280CE90082989F /* CustomTextField.swift in Sources */,
-				BFC25F672D280E1E0082989F /* FetchUserDataUseCase.swift in Sources */,
-				BFC25F452D280D120082989F /* UIColor+Extensions.swift in Sources */,
 				BFC25F3F2D280CDF0082989F /* CustomButton.swift in Sources */,
-				BFC25F592D280DDD0082989F /* UserDataResponse.swift in Sources */,
+				BFC25F842D2A7B140082989F /* BaseViewController.swift in Sources */,
 				BFC25F6D2D290D680082989F /* OnboardingViewController.swift in Sources */,
 				BFC25F312D26DF100082989F /* SignUpCoordinator.swift in Sources */,
-				BFC25F6B2D280E3B0082989F /* User.swift in Sources */,
+				BFC25F7F2D2A73BE0082989F /* OnboardingViewModel.swift in Sources */,
 				BFC25F332D26DF290082989F /* SignInViewController.swift in Sources */,
-				BFC25F472D280D1B0082989F /* UIView+Extensions.swift in Sources */,
 				BFC25F2D2D26DEE70082989F /* SignUpViewController.swift in Sources */,
+				BFC25F7B2D2A737E0082989F /* AuthViewModel.swift in Sources */,
 				BFC25F4D2D280D8E0082989F /* Font.swift in Sources */,
-				BFC25F5D2D280DED0082989F /* AuthRepository.swift in Sources */,
 				BFC25F372D26DF3A0082989F /* SignInCoordinator.swift in Sources */,
-				BFC25F652D280E180082989F /* SignInUseCase.swift in Sources */,
 				BFC25F0E2D22F34C0082989F /* AppDelegate.swift in Sources */,
 				BFC25F572D280DD70082989F /* SignInRequest.swift in Sources */,
 				BFC25F352D26DF300082989F /* SignInViewModel.swift in Sources */,
-				BFC25F692D280E320082989F /* AuthResponse.swift in Sources */,
+				BFC25F7D2D2A73B60082989F /* OnboardingView.swift in Sources */,
 				BFC25F3C2D280CB40082989F /* HomeViewModel.swift in Sources */,
 				BFC25F3A2D280C800082989F /* HomeViewController.swift in Sources */,
 				BFC25F262D2561100082989F /* APIKey.swift in Sources */,
-				BFC25F512D280D9E0082989F /* Environment.swift in Sources */,
+				BFC25F862D2A7B190082989F /* BaseViewModel.swift in Sources */,
 				BFC25F2F2D26DEF00082989F /* SignUpViewModel.swift in Sources */,
 				BFC25F102D22F34C0082989F /* SceneDelegate.swift in Sources */,
+				BFC25F772D2A72EA0082989F /* AuthView.swift in Sources */,
 				BFC25F612D280DFB0082989F /* APIManager.swift in Sources */,
 				BFC25F5F2D280DF50082989F /* Endpoints.swift in Sources */,
+				BFC25F822D2A7B090082989F /* BaseView.swift in Sources */,
 				BFC25F4F2D280D950082989F /* Constants.swift in Sources */,
+				BFC25F792D2A73240082989F /* AuthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
