@@ -9,18 +9,14 @@ import UIKit
 import Then
 
 class CommonButton: UIButton {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
     
-    init(title: String, foreColor: UIColor?, backColor: UIColor, textColor: UIColor) {
+    init(title: String, foreColor: UIColor? = .none, backColor: UIColor? = .accent) {
         super.init(frame: .zero)
         self.configuration = .filled()
         setTitle(title, for: .normal)
-        titleLabel?.font = Font.Title2.font
-        backgroundColor = backColor
-        setTitleColor(foreColor, for: .normal)
-        layer.borderColor = foreColor?.cgColor
+        titleLabel?.font = Font.Title2.weight
+        //backgroundColor = backColor
+        //layer.borderColor = foreColor?.cgColor
         if let _ = foreColor {
             layer.borderWidth = 2
         }

@@ -14,7 +14,7 @@ final class OnboardingView: BaseView {
     let image = UIImageView().then {
         $0.image = UIImage(named: "iHola!")
     }
-    let startButton = CommonButton(title: "시작하기", foreColor: .none, backColor: .accent, textColor: .white)
+    let startButton = CommonButton(title: "시작하기")
     
     override func setupUI() {
         super.setupUI()

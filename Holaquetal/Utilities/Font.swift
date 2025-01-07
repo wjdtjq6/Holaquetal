@@ -14,7 +14,7 @@ enum Font {
     case Body
     case Capition
     
-    var font: UIFont {
+    var weight: UIFont {
         switch self {
         case .Title1:
             return UIFont.systemFont(ofSize: 22, weight: .bold)
@@ -28,7 +28,7 @@ enum Font {
             return UIFont.systemFont(ofSize: 12, weight: .regular)
         }
     }
-    
+
     var lineHeight: CGFloat {
         switch self {
         case .Title1: 30
@@ -37,3 +37,11 @@ enum Font {
         }
     }
 }
+
+//class FontManager: UIFont {
+//    static let title1 = UIFont.systemFont(ofSize: 22, weight: .bold)
+//    static let title2 = UIFont.systemFont(ofSize: 14, weight: .bold)
+//    static let bodyBold = UIFont.systemFont(ofSize: 13, weight: .bold)
+//    static let body = UIFont.systemFont(ofSize: 13, weight: .regular)
+//    static let Caption = UIFont.systemFont(ofSize: 12, weight: .regular)
+//}
