@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class OnboardingViewModel {
+    func buttonClicked() {
+        print(#function)
+    }
+}

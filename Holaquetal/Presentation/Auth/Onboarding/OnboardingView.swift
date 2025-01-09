@@ -11,7 +11,7 @@ import Then
 
 final class OnboardingView: BaseView {
     
-    let image = UIImageView().then {
+    private let image = UIImageView().then {
         $0.image = UIImage(named: "iHola!")
     }
     let startButton = CommonButton(title: "시작하기")

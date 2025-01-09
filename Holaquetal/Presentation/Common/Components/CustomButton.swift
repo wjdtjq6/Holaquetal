@@ -21,6 +21,7 @@ class CommonButton: UIButton {
             layer.borderWidth = 2
         }
         layer.cornerRadius = 15
+        clipsToBounds = true
     }
     
     required init?(coder: NSCoder) {
