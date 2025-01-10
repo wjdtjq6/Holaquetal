@@ -26,12 +26,8 @@ final class AuthView: BaseView {
     override func setupUI() {
         super.setupUI()
         
-        addSubview(appleButton)
-        addSubview(kakaoButton)
-        addSubview(emailButton)
-        addSubview(signupButton)
-        
-        //TODO: 메서드로 만들기
+        addSubViews([appleButton, kakaoButton, emailButton, signupButton])
+
         appleButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(safeAreaLayoutGuide).offset(10)
@@ -60,6 +56,4 @@ final class AuthView: BaseView {
             make.height.equalTo(40)
         }
     }
-    
-    //func addSubviews//TODO: addSubview 한 번에 여러개 하는 메서드 만들기
 }

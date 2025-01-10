@@ -39,6 +39,7 @@
 		BFC25F822D2A7B090082989F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F812D2A7B090082989F /* BaseView.swift */; };
 		BFC25F842D2A7B140082989F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F832D2A7B140082989F /* BaseViewController.swift */; };
 		BFC25F862D2A7B190082989F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F852D2A7B190082989F /* BaseViewModel.swift */; };
+		BFC25F892D3168CC0082989F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F882D3168CC0082989F /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		BFC25F812D2A7B090082989F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		BFC25F832D2A7B140082989F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BFC25F852D2A7B190082989F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		BFC25F882D3168CC0082989F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 		BFC25F492D280D310082989F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BFC25F872D3168B00082989F /* Extensions */,
 				BFC25F4C2D280D8E0082989F /* Font.swift */,
 				BFC25F4E2D280D950082989F /* Constants.swift */,
 			);
@@ -277,6 +280,14 @@
 				BFC25F852D2A7B190082989F /* BaseViewModel.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		BFC25F872D3168B00082989F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BFC25F882D3168CC0082989F /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +383,7 @@
 				BFC25F0E2D22F34C0082989F /* AppDelegate.swift in Sources */,
 				BFC25F572D280DD70082989F /* SignInRequest.swift in Sources */,
 				BFC25F352D26DF300082989F /* SignInViewModel.swift in Sources */,
+				BFC25F892D3168CC0082989F /* UIView+Extensions.swift in Sources */,
 				BFC25F7D2D2A73B60082989F /* OnboardingView.swift in Sources */,
 				BFC25F3C2D280CB40082989F /* HomeViewModel.swift in Sources */,
 				BFC25F3A2D280C800082989F /* HomeViewController.swift in Sources */,
