@@ -7,7 +7,7 @@
 
 import Foundation
 
-class OnboardingViewModel {
+final class OnboardingViewModel {
     func buttonClicked() {
         print(#function)
     }

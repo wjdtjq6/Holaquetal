@@ -15,7 +15,7 @@
 		BFC25F262D2561100082989F /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F252D2561100082989F /* APIKey.swift */; };
 		BFC25F2D2D26DEE70082989F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F2C2D26DEE70082989F /* SignUpViewController.swift */; };
 		BFC25F2F2D26DEF00082989F /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F2E2D26DEF00082989F /* SignUpViewModel.swift */; };
-		BFC25F312D26DF100082989F /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F302D26DF100082989F /* SignUpCoordinator.swift */; };
+		BFC25F312D26DF100082989F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F302D26DF100082989F /* SignUpView.swift */; };
 		BFC25F332D26DF290082989F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F322D26DF290082989F /* SignInViewController.swift */; };
 		BFC25F352D26DF300082989F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F342D26DF300082989F /* SignInViewModel.swift */; };
 		BFC25F372D26DF3A0082989F /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F362D26DF3A0082989F /* SignInCoordinator.swift */; };
@@ -53,7 +53,7 @@
 		BFC25F252D2561100082989F /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		BFC25F2C2D26DEE70082989F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BFC25F2E2D26DEF00082989F /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
-		BFC25F302D26DF100082989F /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		BFC25F302D26DF100082989F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BFC25F322D26DF290082989F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BFC25F342D26DF300082989F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		BFC25F362D26DF3A0082989F /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 			children = (
 				BFC25F2C2D26DEE70082989F /* SignUpViewController.swift */,
 				BFC25F2E2D26DEF00082989F /* SignUpViewModel.swift */,
-				BFC25F302D26DF100082989F /* SignUpCoordinator.swift */,
+				BFC25F302D26DF100082989F /* SignUpView.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -373,7 +373,7 @@
 				BFC25F3F2D280CDF0082989F /* CustomButton.swift in Sources */,
 				BFC25F842D2A7B140082989F /* BaseViewController.swift in Sources */,
 				BFC25F6D2D290D680082989F /* OnboardingViewController.swift in Sources */,
-				BFC25F312D26DF100082989F /* SignUpCoordinator.swift in Sources */,
+				BFC25F312D26DF100082989F /* SignUpView.swift in Sources */,
 				BFC25F7F2D2A73BE0082989F /* OnboardingViewModel.swift in Sources */,
 				BFC25F332D26DF290082989F /* SignInViewController.swift in Sources */,
 				BFC25F2D2D26DEE70082989F /* SignUpViewController.swift in Sources */,

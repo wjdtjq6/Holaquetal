@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthViewModel {
+final class AuthViewModel {
 
 
 

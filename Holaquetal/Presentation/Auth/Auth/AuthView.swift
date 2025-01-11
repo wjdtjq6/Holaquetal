@@ -26,9 +26,10 @@ final class AuthView: BaseView {
     
     override func setupUI() {
         super.setupUI()
-        
-        addSubViews([appleButton, kakaoButton, emailButton, signupButton])
-
+        [appleButton, kakaoButton, emailButton, signupButton].forEach { addSubview($0) }
+    }
+    
+    override func setupConstraints() {
         appleButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(safeAreaLayoutGuide).offset(30)
