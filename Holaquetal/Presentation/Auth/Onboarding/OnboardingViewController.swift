@@ -23,7 +23,19 @@ class OnboardingViewController: UIViewController {
     
     @objc func buttonClicked() {
         let vc = AuthViewController()
-        vc.modalPresentationStyle = .pageSheet//TODO: UISheetPresentationController
+
+        // iOS 15 이상에서 동작하는 sheetPresentationController 설정
+        if let sheet = vc.sheetPresentationController {
+            if #available(iOS 16.0, *) {
+                sheet.detents = [.custom { _ in 250}]
+            } else {
+                sheet.detents = [.medium()]
+            }
+            sheet.prefersGrabberVisible = true // 손잡이 표시
+        }
+
+        vc.modalPresentationStyle = .pageSheet
+
         present(vc, animated: true)
     }
 }

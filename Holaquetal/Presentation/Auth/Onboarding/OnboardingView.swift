@@ -29,8 +29,8 @@ final class OnboardingView: BaseView {
         startButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalTo(safeAreaLayoutGuide).inset(20)
-            make.width.equalTo(280)
-            make.height.equalTo(40)
+            make.width.equalTo(width)
+            make.height.equalTo(44)
         }
     }
 }

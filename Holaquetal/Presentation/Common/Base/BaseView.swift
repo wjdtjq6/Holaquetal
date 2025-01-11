@@ -8,6 +8,9 @@
 import UIKit
 
 class BaseView: UIView {
+    
+    let width = UIScreen.main.bounds.width - 50
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
