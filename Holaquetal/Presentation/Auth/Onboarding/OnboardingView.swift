@@ -18,7 +18,7 @@ final class OnboardingView: BaseView {
     
     override func setupUI() {
         super.setupUI()
-        
+        backgroundColor = .background
         addSubview(image)
         addSubview(startButton)
         

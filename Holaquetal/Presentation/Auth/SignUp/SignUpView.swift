@@ -30,7 +30,6 @@ final class SignUpView: BaseView {
     override func setupUI() {
         super.setupUI()
         [emailLabel, nickLabel, phoneLabel, pwLabel, pwCheckLabel, emailTextField, nickTextField, phoneTextField, pwTextField, pwCheckTextField, duplicatButton, signupButton].forEach { addSubview($0) }
-        backgroundColor = .backgroundPrimary//TODO: 이대로 흰색으로 할 거면 baeview를 흰색으로 바꾸고 onboardingView만 accent로 하기
     }
     
     override func setupConstraints() {
