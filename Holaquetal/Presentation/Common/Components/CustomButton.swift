@@ -8,20 +8,27 @@
 import UIKit
 import Then
 
-final class CommonButton: UIButton {
+final class CustomButton: UIButton {
     
-    init(title: String, foreColor: UIColor? = .none, backColor: UIColor? = .accent) {
+    private let width = UIScreen.main.bounds.width - 50
+    
+    init(title: String, foreColor: UIColor? = .none, backColor: UIColor? = .accent, width: CGFloat? = nil, height: CGFloat? = 44) {
         super.init(frame: .zero)
-        self.configuration = .filled()
+        
+        translatesAutoresizingMaskIntoConstraints = true
+        
         setTitle(title, for: .normal)
         titleLabel?.font = Font.Title2.weight
         backgroundColor = backColor
-        //layer.borderColor = foreColor?.cgColor
         if let _ = foreColor {
             layer.borderWidth = 2
         }
         layer.cornerRadius = 10
         clipsToBounds = true
+    }
+    
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: width, height: 44)
     }
     
     required init?(coder: NSCoder) {

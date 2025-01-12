@@ -17,6 +17,32 @@ final class AuthViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        authView.appleButton.addTarget(self, action: #selector(appleClicked), for: .touchUpInside)
+        authView.kakaoButton.addTarget(self, action: #selector(kakaoClicked), for: .touchUpInside)
+        authView.emailButton.addTarget(self, action: #selector(emailClicked), for: .touchUpInside)
+        authView.signupButton.addTarget(self, action: #selector(signupClicked), for: .touchUpInside)
+    }
+    
+    @objc func appleClicked() {
         
+    }
+    
+    @objc func kakaoClicked() {
+        
+    }
+    
+    @objc func emailClicked() {
+        
+    }
+    
+    @objc func signupClicked() {
+        let vc = SignUpViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = [.large()]
+            sheet.prefersGrabberVisible = true
+        }
+        present(nav, animated: true)
     }
 }

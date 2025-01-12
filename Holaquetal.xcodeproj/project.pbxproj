@@ -40,6 +40,7 @@
 		BFC25F842D2A7B140082989F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F832D2A7B140082989F /* BaseViewController.swift */; };
 		BFC25F862D2A7B190082989F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F852D2A7B190082989F /* BaseViewModel.swift */; };
 		BFC25F892D3168CC0082989F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F882D3168CC0082989F /* UIView+Extensions.swift */; };
+		BFC25F8B2D32752A0082989F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC25F8A2D32752A0082989F /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		BFC25F832D2A7B140082989F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BFC25F852D2A7B190082989F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		BFC25F882D3168CC0082989F /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BFC25F8A2D32752A0082989F /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			children = (
 				BFC25F3E2D280CDF0082989F /* CustomButton.swift */,
 				BFC25F402D280CE90082989F /* CustomTextField.swift */,
+				BFC25F8A2D32752A0082989F /* CustomLabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				BFC25F892D3168CC0082989F /* UIView+Extensions.swift in Sources */,
 				BFC25F7D2D2A73B60082989F /* OnboardingView.swift in Sources */,
 				BFC25F3C2D280CB40082989F /* HomeViewModel.swift in Sources */,
+				BFC25F8B2D32752A0082989F /* CustomLabel.swift in Sources */,
 				BFC25F3A2D280C800082989F /* HomeViewController.swift in Sources */,
 				BFC25F262D2561100082989F /* APIKey.swift in Sources */,
 				BFC25F862D2A7B190082989F /* BaseViewModel.swift in Sources */,

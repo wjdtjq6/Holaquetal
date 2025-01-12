@@ -14,7 +14,7 @@ final class OnboardingView: BaseView {
     private let image = UIImageView().then {
         $0.image = UIImage(named: "iHola!")
     }
-    let startButton = CommonButton(title: "시작하기")
+    let startButton = CustomButton(title: "시작하기")
     
     override func setupUI() {
         super.setupUI()
@@ -29,8 +29,6 @@ final class OnboardingView: BaseView {
         startButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.bottom.equalTo(safeAreaLayoutGuide).inset(20)
-            make.width.equalTo(width)
-            make.height.equalTo(44)
         }
     }
 }
