@@ -23,9 +23,9 @@ final class SignUpView: BaseView {
     let pwTextField = CustomTextField(text: "비밀번호를 입력하세요")
     let pwCheckTextField = CustomTextField(text: "비밀번호를 한 번 더 입력하세요")
     
-    let duplicatButton = CustomButton(title: "중복 확인")
+    let duplicatButton = CustomButton(title: "중복 확인", backColor: .grayCustom)
     
-    let signupButton = CustomButton(title: "가입하기")
+    let signupButton = CustomButton(title: "가입하기", backColor: .grayCustom)
     
     override func setupUI() {
         super.setupUI()

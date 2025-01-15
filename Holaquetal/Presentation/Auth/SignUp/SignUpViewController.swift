@@ -7,12 +7,12 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+final class SignUpViewController: UIViewController {
     
-    let uiView = SignUpView()
-    let viewModel = SignUpViewModel()
+    private let uiView = SignUpView()
+    private let viewModel = SignUpViewModel()
     
-    lazy var xButton = UIBarButtonItem(image: UIImage(named: "close"), style: .plain, target: self, action: #selector(xClicked)).then {
+    private lazy var xButton = UIBarButtonItem(image: UIImage(named: "close"), style: .plain, target: self, action: #selector(xClicked)).then {
         $0.tintColor = .black
     }
     
@@ -24,6 +24,33 @@ class SignUpViewController: UIViewController {
         navigationItem.title = "회원가입"
         navigationItem.leftBarButtonItem = xButton
         navigationController?.navigationBar.backgroundColor = .backgroundSecondary
+    }
+    
+    
+    private func setUpBindings() {
+        uiView.emailTextField.addTarget(self, action: #selector(emailDidChange), for: .editingChanged)
+        uiView.nickTextField.addTarget(self, action: #selector(nickDidChange), for: .editingChanged)
+        uiView.duplicatButton.addTarget(self, action: #selector(test), for: .touchUpInside)
+    }
+    
+    @objc private func emailDidChange() {
+        viewModel.email = uiView.emailTextField.text ?? ""
+        updateSignUpButtonState()
+    }
+    @objc private func nickDidChange() {
+        viewModel.nick = uiView.nickTextField.text ?? ""
+        updateSignUpButtonState()
+    }
+    @objc private func test() {
+        viewModel.checkEmail.toggle()
+    }
+    
+    private func updateDuplicateButtonState() {
+        uiView.duplicatButton.isEnabled = viewModel.isCheckEmail()
+        uiView.duplicatButton.tintColor = .accent
+    }
+    private func updateSignUpButtonState() {
+        uiView.signupButton.isEnabled = viewModel.isEmailVailid() && viewModel.isCheckEmail() && viewModel.isNickValid() && viewModel.isPhoneValid() && viewModel.isPasswordValid() && viewModel.isCheckPWValid()
     }
     
     @objc func xClicked() {
