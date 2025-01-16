@@ -20,7 +20,7 @@ class SignUpViewModel {
     }
     
     func isCheckEmail() -> Bool {
-        return true
+        return isEmailVailid()
     }
     func isNickValid() -> Bool {
         return nick.count > 0 && nick.count <= 30

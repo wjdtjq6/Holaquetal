@@ -24,8 +24,8 @@ final class SignUpViewController: UIViewController {
         navigationItem.title = "회원가입"
         navigationItem.leftBarButtonItem = xButton
         navigationController?.navigationBar.backgroundColor = .backgroundSecondary
+        setUpBindings()
     }
-    
     
     private func setUpBindings() {
         uiView.emailTextField.addTarget(self, action: #selector(emailDidChange), for: .editingChanged)
@@ -35,6 +35,7 @@ final class SignUpViewController: UIViewController {
     
     @objc private func emailDidChange() {
         viewModel.email = uiView.emailTextField.text ?? ""
+        updateDuplicateButtonState()
         updateSignUpButtonState()
     }
     @objc private func nickDidChange() {
@@ -43,11 +44,12 @@ final class SignUpViewController: UIViewController {
     }
     @objc private func test() {
         viewModel.checkEmail.toggle()
+        updateDuplicateButtonState()
+        print("중복버튼눌림")
     }
     
     private func updateDuplicateButtonState() {
-        uiView.duplicatButton.isEnabled = viewModel.isCheckEmail()
-        uiView.duplicatButton.tintColor = .accent
+        uiView.duplicatButton.updateState(isEnabled: viewModel.isEmailVailid())
     }
     private func updateSignUpButtonState() {
         uiView.signupButton.isEnabled = viewModel.isEmailVailid() && viewModel.isCheckEmail() && viewModel.isNickValid() && viewModel.isPhoneValid() && viewModel.isPasswordValid() && viewModel.isCheckPWValid()

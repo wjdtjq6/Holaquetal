@@ -31,6 +31,11 @@ final class CustomButton: UIButton {
         return CGSize(width: width, height: 44)
     }
     
+    func updateState(isEnabled: Bool) {
+        self.isEnabled = isEnabled
+        backgroundColor = isEnabled ? .accent : .grayCustom
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
