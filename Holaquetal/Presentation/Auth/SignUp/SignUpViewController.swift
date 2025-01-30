@@ -35,25 +35,25 @@ final class SignUpViewController: UIViewController {
     
     @objc private func emailDidChange() {
         viewModel.email = uiView.emailTextField.text ?? ""
-        updateDuplicateButtonState()
-        updateSignUpButtonState()
+//        updateDuplicateButtonState()
+//        updateSignUpButtonState()
     }
     @objc private func nickDidChange() {
         viewModel.nick = uiView.nickTextField.text ?? ""
-        updateSignUpButtonState()
+//        updateSignUpButtonState()
     }
     @objc private func test() {
         viewModel.checkEmail.toggle()
-        updateDuplicateButtonState()
+//        updateDuplicateButtonState()
         print("중복버튼눌림")
     }
     
-    private func updateDuplicateButtonState() {
-        uiView.duplicatButton.updateState(isEnabled: viewModel.isEmailVailid())
-    }
-    private func updateSignUpButtonState() {
-        uiView.signupButton.isEnabled = viewModel.isEmailVailid() && viewModel.isCheckEmail() && viewModel.isNickValid() && viewModel.isPhoneValid() && viewModel.isPasswordValid() && viewModel.isCheckPWValid()
-    }
+//    private func updateDuplicateButtonState() {
+//        uiView.duplicatButton.updateState(isEnabled: viewModel.isEmailVailid())
+//    }
+//    private func updateSignUpButtonState() {
+//        uiView.signupButton.isEnabled = viewModel.isEmailVailid() && viewModel.isNickValid() && viewModel.isPhoneValid() && viewModel.isPasswordValid() && viewModel.isCheckPWValid()
+//    }
     
     @objc func xClicked() {
         view.window?.rootViewController?.dismiss(animated: true)
